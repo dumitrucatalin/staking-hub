@@ -1,0 +1,22 @@
+<svg width="50" height="50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Circle (Shield/Halo) -->
+  <circle cx="100" cy="100" r="90" stroke="gray" stroke-width="5" fill="none"/>
+
+  <!-- Central Hub Circle -->
+  <circle cx="100" cy="100" r="20" fill="darkblue"/>
+
+  <!-- Radiating Lines (Connections) -->
+  <line x1="100" y1="80" x2="100" y2="30" stroke="darkblue" stroke-width="2"/>
+  <line x1="100" y1="120" x2="100" y2="170" stroke="darkblue" stroke-width="2"/>
+  <line x1="80" y1="100" x2="30" y2="100" stroke="darkblue" stroke-width="2"/>
+  <line x1="120" y1="100" x2="170" y2="100" stroke="darkblue" stroke-width="2"/>
+
+  <!-- Outer Nodes -->
+  <circle cx="30" cy="100" r="5" fill="darkblue"/>
+  <circle cx="170" cy="100" r="5" fill="darkblue"/>
+  <circle cx="100" cy="30" r="5" fill="darkblue"/>
+  <circle cx="100" cy="170" r="5" fill="darkblue"/>
+
+  <!-- Platform Name -->
+  <text x="50" y="190" font-family="Arial" font-size="16" fill="darkblue">StakingHub</text>
+</svg>
