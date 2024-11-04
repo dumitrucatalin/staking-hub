@@ -1,20 +1,20 @@
 // app/staking/[stakingPoolId]/page.tsx
 
 interface StakingPoolProps {
-    params: {
-        stakingPoolId: string;
-    };
+  params: {
+    stakingPoolId: string;
+  };
 }
 
 const StakingPool = ({ params }: any) => {
-    const { stakingPoolId } = params;
+  const { stakingPoolId } = params;
 
-    return (
-        <div>
-            <h1>Staking Pool</h1>
-            <p>Pool ID: {stakingPoolId}</p>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Staking Pool</h1>
+      <p>Pool ID: {stakingPoolId}</p>
+    </div>
+  );
 };
 
 export default StakingPool;

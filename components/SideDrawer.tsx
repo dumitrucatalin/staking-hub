@@ -3,6 +3,7 @@ import { useChainId, useConnect, useAccount, useDisconnect, Connector } from 'wa
 import Image from 'next/image';
 
 import { useEffect, useState } from 'react';
+import { WalletConnectButton } from './WalletConnectButton';
 
 
 interface SideDrawerProps {
@@ -103,6 +104,7 @@ export function SideDrawer({ isOpen, onClose }: SideDrawerProps) {
                     </div>
                 ) : (
                     <>
+
                         <button
                             className="w-full bg-[#282828] text-white py-2 rounded-lg mb-4 flex items-center justify-center space-x-2"
                             onClick={() => handleConnect('MetaMask')}
@@ -110,27 +112,15 @@ export function SideDrawer({ isOpen, onClose }: SideDrawerProps) {
                             <Image src="/png/metamask.png" alt="Metamask" width={24} height={24} priority />
                             <span className="text-20">Connect Metamask</span>
                         </button>
-                        <button
-                            className="w-full bg-[#282828] text-white py-2 rounded-lg mb-4 flex items-center justify-center space-x-2"
-                            onClick={() => handleConnect('Portis')}
-                        >
-                            <Image src="/png/portis.png" alt="Portis" width={24} height={24} priority />
-                            <span className="text-20">Connect Portis</span>
-                        </button>
-                        <button
-                            className="w-full bg-[#282828] text-white py-2 rounded-lg mb-4 flex items-center justify-center space-x-2"
-                            onClick={() => handleConnect('Torus')}
-                        >
-                            <Image src="/png/torus.png" alt="Torus" width={24} height={24} priority />
-                            <span className="text-20">Connect Torus</span>
-                        </button>
-                        <button
+                        {/* <button
                             className="w-full bg-[#282828] text-white py-2 rounded-lg mb-4 flex items-center justify-center space-x-2"
                             onClick={() => handleConnect('WalletConnect')}
                         >
                             <Image src="/walletlink.svg" alt="Walletlink" width={24} height={24} priority />
                             <span className="text-20">Connect Walletlink</span>
-                        </button>
+                        </button> */}
+
+                        <WalletConnectButton />
                     </>
                 )}
                 <p className="text-sm text-gray-500 mt-4">
